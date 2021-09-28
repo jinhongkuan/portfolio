@@ -1,27 +1,81 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.75rem;
+}
+
+.Card-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.Card-date {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Card-description {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Card-tags {
+  font-weight: 500;
+  font-size: 1rem;
+
+  margin-right: 1.5rem;
+}
+
+.Card-actions {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+}
+
+.Card-actions:hover {
+  opacity: 0.7;
+}
+
+.w-160 {
+  width: 40rem;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 25vmin;
+  width: 25vmin;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  overflow-x: hidden;
 }
 
 .App-link {
@@ -35,4 +89,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Style all font awesome icons */
+.fa {
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.Down-arrow {
+  position: 'absolute';
+  margin-top: -55px;
+  margin-left: calc(50vw - 25px / 2);
+  margin-bottom: 5px;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
